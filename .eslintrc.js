@@ -12,6 +12,9 @@ module.exports = {
   ],
   // prettier/react 추가
   rules: {
-    "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [
+      "error",
+      { devDependencies: true, extensions: [".js", ".jsx"] },
+    ],
   },
 };
