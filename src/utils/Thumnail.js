@@ -3,9 +3,13 @@ import styled from "styled-components";
 
 const thumnail = ({ width, src, title, content }) => {
   const Box = styled.div`
-    width: ${width ? width : "30%"};
+    width: ${width ? width : 30}%;
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    @media (max-width: 768px) {
+      width: ${width ? width : 280};
+      margin-right: 12px;
+    }
   `;
   const Img = styled.img`
     border-radius: 16px 16px 0 0;

@@ -35,9 +35,16 @@ body {
   width: 1220px;
 }
 
+.inner__slider__conatiner{
+  width: 1220px;
+}
+
 @media (max-width: 1440px){
   .inner__conatiner{
     width: 90%;
+  }
+  .inner__slider__conatiner{
+    width:90%;
   }
 }
 
@@ -47,6 +54,15 @@ body {
 
 /* 화면 너비 0 ~ 768px */
 @media (max-width: 768px){
+  .inner__slider__conatiner{
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .inner__slider__conatiner::-webkit-scrollbar{
+    display: none;
+  }
 }
 
   /* 화면 너비 0 ~ 480px */

@@ -26,7 +26,7 @@ const ThumnailList = [
 
 const ThumnailArea = () => {
   return (
-    <div className="inner__conatiner">
+    <div className="inner__slider__conatiner">
       <div className="thumnail__list__container">
         {ThumnailList.map((item) => (
           <Thumnail src={item.src} title={item.title} content={item.content} />
