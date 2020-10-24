@@ -7,7 +7,7 @@ const thumnail = ({ width, src, title, content }) => {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     @media (max-width: 768px) {
-      width: ${width ? width : 280};
+      min-width: 280px;
       margin-right: 12px;
     }
   `;
