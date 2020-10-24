@@ -1,0 +1,39 @@
+import React from "react";
+import "./ThumnailArea.css";
+import Thumnail from "../../utils/Thumnail";
+
+const ThumnailList = [
+  {
+    src:
+      "https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720",
+    title: "독특한 공간",
+    content: "단순한 숙소 이상의 특별함이 담긴 공간",
+  },
+  {
+    src:
+      "https://a0.muscache.com/im/pictures/4a2f688e-0b33-4feb-932f-494b9a37348c.jpg?im_w=720",
+    title: "온라인 체험",
+    content: "모두가 함께 즐기는 세계 각지의 독특한 체험",
+  },
+  {
+    src:
+      "https://a0.muscache.com/im/pictures/fdb46962-10c1-45fc-a228-d0b055411448.jpg?im_w=720",
+    title: "집 전체",
+    content:
+      "일행만을 위한 편안한 공간에서 친구 및 가족과 오붓한 시간을 보내세요.",
+  },
+];
+
+const ThumnailArea = () => {
+  return (
+    <div className="inner__conatiner">
+      <div className="thumnail__list__container">
+        {ThumnailList.map((item) => (
+          <Thumnail src={item.src} title={item.title} content={item.content} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ThumnailArea;
