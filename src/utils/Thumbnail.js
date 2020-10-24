@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const thumnail = ({ width, src, title, content }) => {
+const thumbnail = ({ width, src, title, content }) => {
   const Box = styled.div`
     width: ${width ? width : 30}%;
     border-radius: 16px;
@@ -37,4 +37,4 @@ const thumnail = ({ width, src, title, content }) => {
   );
 };
 
-export default thumnail;
+export default thumbnail;

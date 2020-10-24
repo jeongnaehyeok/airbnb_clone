@@ -1,8 +1,8 @@
 import React from "react";
-import "./ThumnailArea.css";
-import Thumnail from "../../utils/Thumnail";
+import "./ThumbnailArea.css";
+import Thumbnail from "../../utils/Thumbnail";
 
-const ThumnailList = [
+const ThumbnailList = [
   {
     src:
       "https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720",
@@ -24,16 +24,16 @@ const ThumnailList = [
   },
 ];
 
-const ThumnailArea = () => {
+const ThumbnailArea = () => {
   return (
     <div className="inner__slider__conatiner">
-      <div className="thumnail__list__container">
-        {ThumnailList.map((item) => (
-          <Thumnail src={item.src} title={item.title} content={item.content} />
+      <div className="thumbnail__list__container">
+        {ThumbnailList.map((item) => (
+          <Thumbnail src={item.src} title={item.title} content={item.content} />
         ))}
       </div>
     </div>
   );
 };
 
-export default ThumnailArea;
+export default ThumbnailArea;
