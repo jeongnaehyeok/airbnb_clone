@@ -1,0 +1,20 @@
+.thumbnaillist {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1440px) {
+}
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px) {
+}
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px) {
+  .thumbnaillist {
+    width: auto;
+    display: inline-flex;
+    padding: 0 24px;
+  }
+}
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+}

@@ -1,0 +1,36 @@
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inner__conatiner {
+  width: 1220px;
+}
+
+@media (max-width: 1440px) {
+  .innerslider__conatiner {
+    width: 90%;
+  }
+}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px) {
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px) {
+  .innerslider__conatiner {
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .innerslider__conatiner::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+}

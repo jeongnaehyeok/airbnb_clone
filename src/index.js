@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import "./reset.css";
 
 import { createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";

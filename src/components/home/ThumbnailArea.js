@@ -1,6 +1,6 @@
 import React from "react";
-import "./ThumbnailArea.css";
-import Thumbnail from "../../utils/Thumbnail";
+import "./ThumbnailArea.scss";
+import Thumbnail from "../utils/Thumbnail";
 
 const ThumbnailList = [
   {
@@ -26,10 +26,15 @@ const ThumbnailList = [
 
 const ThumbnailArea = () => {
   return (
-    <div className="inner__slider__conatiner">
-      <div className="thumbnail__list__container">
+    <div className="innerslider__conatiner">
+      <div className="thumbnaillist">
         {ThumbnailList.map((item) => (
-          <Thumbnail src={item.src} title={item.title} content={item.content} />
+          <Thumbnail
+            src={item.src}
+            title={item.title}
+            content={item.content}
+            width="regular"
+          />
         ))}
       </div>
     </div>
