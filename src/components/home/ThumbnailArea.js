@@ -2,6 +2,8 @@ import React from "react";
 import "./ThumbnailArea.scss";
 import Thumbnail from "../utils/Thumbnail";
 
+import classNames from "classnames";
+
 const ThumbnailList = [
   {
     src:
@@ -26,7 +28,7 @@ const ThumbnailList = [
 
 const ThumbnailArea = () => {
   return (
-    <div className="innerslider__conatiner">
+    <div className={classNames("conatiner", "slider")}>
       <div className="thumbnaillist">
         {ThumbnailList.map((item) => (
           <Thumbnail
