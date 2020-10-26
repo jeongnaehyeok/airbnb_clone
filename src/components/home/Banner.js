@@ -6,7 +6,7 @@ import "./Banner.scss";
 const Banner = () => {
   return (
     <div className="banner">
-      <div className="conatiner">
+      <div className="container">
         <div className="banner__text">
           <div className="banner__text--title">이제, 여행은 가까운 곳에서.</div>
           <div className="banner__text--content">

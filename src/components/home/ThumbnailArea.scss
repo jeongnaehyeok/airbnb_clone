@@ -2,6 +2,7 @@
 .thumbnaillist {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 54px;
   @include respond-to("small") {
     width: auto;
     display: inline-flex;

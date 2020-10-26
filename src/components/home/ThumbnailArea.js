@@ -28,7 +28,7 @@ const ThumbnailList = [
 
 const ThumbnailArea = () => {
   return (
-    <div className={classNames("conatiner", "slider")}>
+    <div className={classNames("container", "slider")}>
       <div className="thumbnaillist">
         {ThumbnailList.map((item) => (
           <Thumbnail
