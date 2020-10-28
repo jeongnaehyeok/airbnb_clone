@@ -39,7 +39,6 @@
     }
   }
   .gridframe {
-    width: 100%;
     gap: 16px;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -49,7 +48,6 @@
       grid-template-rows: 1fr 1fr;
     }
     @include respond-to("small") {
-      width: auto !important;
       grid-template-rows: 1fr;
       grid-template-columns: repeat(4, calc(100% - 84px));
     }

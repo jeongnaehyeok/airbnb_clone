@@ -51,7 +51,7 @@ const ThemeContentsArea = () => {
           </div>
         </div>
       </div>
-      <div className={classNames("container", "slider")}>
+      <div className={classNames("container", "gridslider")}>
         <div className="gridframe">
           {ThumbnailList.map((item) => (
             <Thumbnail
