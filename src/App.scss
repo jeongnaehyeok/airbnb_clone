@@ -1,0 +1,21 @@
+@import "./scss/mixins";
+.page {
+  @include flex-column-center;
+  width: 100%;
+}
+.container {
+  width: 1220px;
+  @include respond-to("large") {
+    width: 90%;
+  }
+  @include respond-to("small") {
+    &.slider {
+      width: 100%;
+      @include slider;
+    }
+    &.gridslider {
+      width: calc(100%-48px) !important;
+      @include slider;
+    }
+  }
+}

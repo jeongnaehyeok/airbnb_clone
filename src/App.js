@@ -1,8 +1,22 @@
 import React from "react";
-import "./App.css";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-function App() {
-  return <div className="App">test</div>;
-}
+import "./App.scss";
+import "./scss/reset.scss";
+
+import Navbar from "./components/Navbar";
+import Home from "./page/Home";
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Redirect path="*" to="/" />
+      </Switch>
+    </BrowserRouter>
+  );
+};
 
 export default App;

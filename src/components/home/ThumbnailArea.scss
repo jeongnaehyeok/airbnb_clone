@@ -1,0 +1,10 @@
+@import "../../scss/mixins";
+.thumbnaillist {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+  @include respond-to("small") {
+    padding: 0 24px;
+    display: inline-flex;
+  }
+}

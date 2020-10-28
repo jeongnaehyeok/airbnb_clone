@@ -1,0 +1,51 @@
+// ****************
+// Display Size
+// ****************
+
+$breakpoints: (
+  "extra-small": (
+    max-width: 480px,
+  ),
+  "small": (
+    max-width: 744px,
+  ),
+  "medium": (
+    max-width: 1128px,
+  ),
+  "large": (
+    max-width: 1440px,
+  ),
+) !default;
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// Layout
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Slider Frame
+@mixin slider {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

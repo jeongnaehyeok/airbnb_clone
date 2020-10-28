@@ -1,0 +1,61 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+.themecontentsarea {
+  @include flex-column-center;
+  width: 100%;
+  background: #000000;
+  padding: 64px 0px 80px;
+  .themecontents {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .themecontents__text {
+      color: $white;
+      &--title {
+        font-size: $font-size-1;
+        font-weight: $font-weight-bolder;
+        line-height: 30px;
+        @include respond-to("medium") {
+          font-size: $font-size-2;
+          font-weight: $font-weight-bold;
+          line-height: 26px;
+        }
+      }
+      &--contents {
+        width: 460px;
+        margin-top: 4px;
+        line-height: 20px;
+
+        @include respond-to("small") {
+          width: 100%;
+        }
+      }
+    }
+    .themecontents__button {
+      @include respond-to("small") {
+        display: none;
+      }
+    }
+  }
+  .gridframe {
+    gap: 16px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    @include respond-to("medium") {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    @include respond-to("small") {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4, calc(100% - 84px));
+    }
+  }
+  @include respond-to("medium") {
+    padding: 48px 0px 64px;
+  }
+  @include respond-to("small") {
+    padding: 32px 0px 40px;
+  }
+}
