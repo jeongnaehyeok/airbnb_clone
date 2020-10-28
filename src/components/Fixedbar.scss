@@ -1,0 +1,23 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+.fixedbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: $font-size-4;
+  line-height: 18px;
+  color: $black;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: $white-gray;
+  text-align: center;
+  position: relative;
+  > a {
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+  }
+  @include respond-to("small") {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
