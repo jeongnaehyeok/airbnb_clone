@@ -9,6 +9,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 30px;
     .themecontents__text {
       color: $white;
       &--title {
@@ -35,6 +36,22 @@
       @include respond-to("small") {
         display: none;
       }
+    }
+  }
+  .gridframe {
+    width: 100%;
+    gap: 16px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    @include respond-to("medium") {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    @include respond-to("small") {
+      width: auto !important;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4, calc(100% - 84px));
     }
   }
   @include respond-to("medium") {

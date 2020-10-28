@@ -16,14 +16,22 @@
     width: 300px;
     color: white;
     .banner__text--title {
-      font-size: $font-size-1;
+      font-size: $font-size-0;
       font-weight: $font-weight-bolder;
+      word-break: keep-all;
     }
     .banner__text--content {
       font-size: $font-size-4;
       margin: 18px 0 22px;
+      line-height: 18px;
     }
   }
+  @include respond-to("large") {
+    .banner__text--title {
+      font-size: $font-size-1;
+    }
+  }
+
   @include respond-to("small") {
     align-items: flex-start;
     .banner__text {

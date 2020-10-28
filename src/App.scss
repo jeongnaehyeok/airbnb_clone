@@ -10,6 +10,7 @@
   }
   @include respond-to("small") {
     &.slider {
+      padding: 0 24px;
       width: 100%;
       overflow-x: auto;
       -ms-overflow-style: none;

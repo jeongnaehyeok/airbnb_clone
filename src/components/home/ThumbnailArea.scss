@@ -4,8 +4,7 @@
   justify-content: space-between;
   margin-bottom: 54px;
   @include respond-to("small") {
-    width: auto;
+    width: auto !important;
     display: inline-flex;
-    padding: 0 24px;
   }
 }
