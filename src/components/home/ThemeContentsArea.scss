@@ -52,6 +52,13 @@
       grid-template-columns: repeat(4, calc(100% - 84px));
     }
   }
+  .themecontents__bottom {
+    padding-top: 32px;
+    display: none;
+    @include respond-to("small") {
+      display: block;
+    }
+  }
   @include respond-to("medium") {
     padding: 48px 0px 64px;
   }

@@ -64,6 +64,11 @@ const ThemeContentsArea = () => {
           ))}
         </div>
       </div>
+      <div className="container">
+        <div className="themecontents__bottom">
+          <BorderButton color="black" url="/" text="모두 둘러보기" />
+        </div>
+      </div>
     </div>
   );
 };
