@@ -1,0 +1,22 @@
+@import "../../scss/mixins";
+
+.logo {
+  svg {
+    display: block;
+    fill: white;
+  }
+  &-large {
+    display: block;
+  }
+  &-medium {
+    display: none;
+  }
+  @include respond-to(medium) {
+    &-large {
+      display: none;
+    }
+    &-medium {
+      display: block;
+    }
+  }
+}

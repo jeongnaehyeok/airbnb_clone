@@ -6,7 +6,7 @@ import "./scss/reset.scss";
 
 import Fixedbar from "./components/Fixedbar";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./page/Navbar";
 import Home from "./page/Home";
 
 const App = () => {

@@ -1,0 +1,15 @@
+@import "../scss/mixins";
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  // background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .navbar__flexbox {
+    width: 100%;
+  }
+}
