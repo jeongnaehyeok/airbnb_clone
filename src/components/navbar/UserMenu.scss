@@ -1,5 +1,9 @@
+@import "../../scss/mixins";
 .usermenu {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  @include respond-to("small") {
+    display: none;
+  }
 }

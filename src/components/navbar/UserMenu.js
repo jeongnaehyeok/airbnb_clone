@@ -51,11 +51,13 @@ const UserMenu = ({ navAtive }) => {
         url="https://www.airbnb.co.kr/host/homes"
         contents="호스트 되기"
       />
-      <RoundButton
-        navAtive={navAtive}
-        type="button"
-        contents={<GlobalIcon />}
-      />
+      <div>
+        <RoundButton
+          navAtive={navAtive}
+          type="button"
+          contents={<GlobalIcon />}
+        />
+      </div>
     </div>
   );
 };
