@@ -1,0 +1,54 @@
+@import "../../scss/variables";
+
+.roundbutton {
+  appearance: none;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-4;
+  font-weight: $font-weight-bold;
+  line-height: 18px;
+  outline: none;
+  overflow: visible;
+  padding: 12px;
+  text-decoration: none;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  position: relative;
+  white-space: nowrap;
+  z-index: 1;
+  color: $black;
+  &::before {
+    content: "";
+    border-radius: 22px;
+    bottom: 0px;
+    content: "";
+    left: -3px;
+    position: absolute;
+    right: -3px;
+    top: 0px;
+    z-index: 0;
+  }
+  .roundbutton--text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &.deactive {
+    color: $white;
+    &:hover::before {
+      background: $white;
+      opacity: 0.15;
+    }
+  }
+  &.active {
+    color: $black;
+    &:hover::before {
+      background: $white-gray;
+    }
+  }
+}

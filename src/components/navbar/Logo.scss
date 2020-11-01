@@ -1,15 +1,26 @@
 @import "../../scss/mixins";
+@import "../../scss/variables";
 
 .logo {
+  width: 50%;
   svg {
     display: block;
-    fill: white;
   }
   &-large {
     display: block;
   }
   &-medium {
     display: none;
+  }
+  &.active {
+    svg {
+      fill: $pink;
+    }
+  }
+  &.deactive {
+    svg {
+      fill: $white;
+    }
   }
   @include respond-to(medium) {
     &-large {
@@ -18,5 +29,8 @@
     &-medium {
       display: block;
     }
+  }
+  @include respond-to("small") {
+    display: none;
   }
 }

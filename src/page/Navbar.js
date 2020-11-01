@@ -1,16 +1,22 @@
 import React from "react";
+import classNames from "classnames";
 
 import "./Navbar.scss";
 
+import useNavAtive from "../components/utils/useNavAtive";
+
 import Logo from "../components/navbar/Logo";
+import UserMenu from "../components/navbar/UserMenu";
 
 const Navbar = () => {
+  const { navAtive } = useNavAtive();
   return (
-    <div className="navbar">
+    <div className={classNames("navbararea", navAtive)}>
       <div className="container">
-        <dvi className="navbar__flexbox">
-          <Logo />
-        </dvi>
+        <div className="navbar">
+          <Logo navAtive={navAtive} />
+          <UserMenu navAtive={navAtive} />
+        </div>
       </div>
     </div>
   );
