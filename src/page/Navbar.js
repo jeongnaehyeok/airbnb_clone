@@ -3,13 +3,13 @@ import classNames from "classnames";
 
 import "./Navbar.scss";
 
-import usenavAtcive from "../components/utils/usenavAtcive";
+import useNavActive from "components/utils/useNavActive";
 
-import Logo from "../components/navbar/Logo";
-import UserMenu from "../components/navbar/UserMenu";
+import Logo from "components/navbar/Logo";
+import UserMenu from "components/navbar/UserMenu";
 
 const Navbar = () => {
-  const { navAtcive } = usenavAtcive();
+  const { navAtcive } = useNavActive();
   return (
     <div className={classNames("navbararea", navAtcive)}>
       <div className="container">

@@ -3,9 +3,9 @@ import classNames from "classnames";
 
 import "./UserMenu.scss";
 
-import useOutSideClick from "../utils/useOutSideClick";
+import useOutSideClick from "components/utils/useOutSideClick";
 
-import RoundButton from "../utils/RoundButton";
+import RoundButton from "components/utils/RoundButton";
 
 const GlobalIcon = () => {
   return (

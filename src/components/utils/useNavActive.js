@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-const useNavAtive = () => {
-  const [state, setState] = useState({ navAtive: "deactive" });
+const useNavActive = () => {
+  const [state, setState] = useState({ navAtcive: "deactive" });
   const onScroll = () => {
-    setState({ navAtive: window.scrollY > 58 ? "active" : "deactive" });
+    setState({ navAtcive: window.scrollY > 58 ? "active" : "deactive" });
   };
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -12,4 +12,4 @@ const useNavAtive = () => {
   return state;
 };
 
-export default useNavAtive;
+export default useNavActive;
