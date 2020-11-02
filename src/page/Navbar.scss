@@ -8,11 +8,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px;
   &.active {
     top: 0;
     background-color: white;
     position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px;
   }
   .navbar {
     width: 100%;
