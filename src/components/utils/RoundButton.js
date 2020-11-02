@@ -3,10 +3,13 @@ import classNames from "classnames";
 
 import "./RoundButton.scss";
 
-const RoundButton = ({ navAtive, type, contents, url, color }) => {
+const RoundButton = ({ navAtive, type, contents, url, color, onClick }) => {
   if (type == "button") {
     return (
-      <button className={classNames("roundbutton", navAtive, color)}>
+      <button
+        onClick={onClick}
+        className={classNames("roundbutton", navAtive, color)}
+      >
         <div className="roundbutton--text">{contents}</div>
       </button>
     );
