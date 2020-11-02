@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 const useOutSideClick = (el, initialState) => {
   const [isActive, setIsActive] = useState(initialState);
-  console.log(isActive);
 
   useEffect(() => {
     const onClick = (e) => {

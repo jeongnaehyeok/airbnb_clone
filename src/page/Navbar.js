@@ -3,19 +3,19 @@ import classNames from "classnames";
 
 import "./Navbar.scss";
 
-import useNavAtive from "../components/utils/useNavAtive";
+import usenavAtcive from "../components/utils/usenavAtcive";
 
 import Logo from "../components/navbar/Logo";
 import UserMenu from "../components/navbar/UserMenu";
 
 const Navbar = () => {
-  const { navAtive } = useNavAtive();
+  const { navAtcive } = usenavAtcive();
   return (
-    <div className={classNames("navbararea", navAtive)}>
+    <div className={classNames("navbararea", navAtcive)}>
       <div className="container">
         <div className="navbar">
-          <Logo navAtive={navAtive} />
-          <UserMenu navAtive={navAtive} />
+          <Logo navAtcive={navAtcive} />
+          <UserMenu navAtcive={navAtcive} />
         </div>
       </div>
     </div>

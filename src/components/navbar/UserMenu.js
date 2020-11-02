@@ -88,7 +88,7 @@ const UserIcon = () => {
   );
 };
 
-const UserMenu = ({ navAtive }) => {
+const UserMenu = ({ navAtcive }) => {
   const globaldropRef = useRef(null);
   const userdropRef = useRef(null);
   const [globaldrop, setGlobalDrop] = useOutSideClick(globaldropRef, false);
@@ -100,7 +100,7 @@ const UserMenu = ({ navAtive }) => {
   return (
     <div className="usermenu">
       <RoundButton
-        navAtive={navAtive}
+        navAtcive={navAtcive}
         type="a"
         url="https://www.airbnb.co.kr/host/homes"
         contents="호스트 되기"
@@ -108,7 +108,7 @@ const UserMenu = ({ navAtive }) => {
       <div className="userbutton">
         <RoundButton
           onClick={globalClick}
-          navAtive={navAtive}
+          navAtcive={navAtcive}
           type="button"
           contents={<GlobalIcon />}
         />
@@ -147,7 +147,7 @@ const UserMenu = ({ navAtive }) => {
         <RoundButton
           onClick={userClick}
           type="button"
-          navAtive={navAtive}
+          navAtcive={navAtcive}
           color="white"
           contents={<UserIcon />}
         />
