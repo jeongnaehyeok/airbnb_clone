@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 import "./ThumbnailArea.scss";
 
-import Thumbnail from "components/utils/Thumbnail";
+import Thumbnail from "@/components/utils/Thumbnail";
 
 const ThumbnailList = [
   {

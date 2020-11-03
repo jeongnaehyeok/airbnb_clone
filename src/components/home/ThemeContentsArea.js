@@ -3,8 +3,8 @@ import classNames from "classnames";
 
 import "./ThemeContentsArea.scss";
 
-import BorderButton from "components/utils/BorderButton";
-import Thumbnail from "components/utils/Thumbnail";
+import BorderButton from "@/components/utils/BorderButton";
+import Thumbnail from "@/components/utils/Thumbnail";
 
 const ThumbnailList = [
   {

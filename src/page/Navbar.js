@@ -3,10 +3,10 @@ import classNames from "classnames";
 
 import "./Navbar.scss";
 
-import useNavActive from "components/utils/useNavActive";
+import useNavActive from "@/components/utils/useNavActive";
 
-import Logo from "components/navbar/Logo";
-import UserMenu from "components/navbar/UserMenu";
+import Logo from "@/components/navbar/Logo";
+import UserMenu from "@/components/navbar/UserMenu";
 
 const Navbar = () => {
   const { navAtcive } = useNavActive();

@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "./App.scss";
-import "scss/reset.scss";
+import "@/scss/reset.scss";
 
-import Fixedbar from "components/Fixedbar";
+import Fixedbar from "@/components/Fixedbar";
 
-import Navbar from "page/Navbar";
-import Home from "page/Home";
+import Navbar from "@/page/Navbar";
+import Home from "@/page/Home";
 
 const App = () => {
   return (
