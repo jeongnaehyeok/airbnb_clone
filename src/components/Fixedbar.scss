@@ -3,19 +3,18 @@
 .fixedbar {
   display: flex;
   justify-content: center;
+  position: relative;
   width: 100%;
   height: 58px;
+  padding: 16px 0;
+  background: $white-gray;
+  color: $black;
   font-size: $font-size-4;
   line-height: 18px;
-  color: $black;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background: $white-gray;
   text-align: center;
-  position: relative;
   > a {
-    font-weight: $font-weight-bold;
     text-decoration: underline;
+    font-weight: $font-weight-bold;
   }
   @include respond-to("small") {
     height: 50px;

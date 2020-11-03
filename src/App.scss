@@ -10,12 +10,12 @@
   }
   @include respond-to("small") {
     &.slider {
-      width: 100%;
       @include slider;
+      width: 100%;
     }
     &.gridslider {
-      width: calc(100%-48px) !important;
       @include slider;
+      width: calc(100%-48px) !important;
     }
   }
 }

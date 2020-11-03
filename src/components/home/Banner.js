@@ -1,5 +1,5 @@
 import React from "react";
-import BorderButton from "../utils/BorderButton";
+import BorderButton from "@/components/utils/BorderButton";
 
 import "./Banner.scss";
 
