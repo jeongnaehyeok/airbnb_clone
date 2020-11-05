@@ -1,0 +1,56 @@
+@import "../../scss/variables";
+
+.textbutton {
+  position: relative;
+  padding: 10px 16px;
+  .textbutton__text {
+    color: $white;
+    font-size: $font-size-base;
+    line-height: 20px;
+    font-weight: $font-weight-normal;
+    cursor: pointer;
+    &.deactive {
+      &::before {
+        position: absolute !important;
+        width: 18px !important;
+        height: 2px !important;
+        left: 50% !important;
+        bottom: 0px !important;
+        margin-left: -9px !important;
+        border-radius: 1px !important;
+        background-color: currentcolor !important;
+        content: "" !important;
+        -webkit-transform: scaleX(0) !important;
+        -ms-transform: scaleX(0) !important;
+        transform: scaleX(0) !important;
+        -webkit-transition: 0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
+          0.2s transform cubic-bezier(0, 0, 0.1, 1) !important;
+        -moz-transition: 0.2s transform cubic-bezier(0, 0, 0.1, 1) !important;
+        transition: 0.2s -ms-transform cubic-bezier(0, 0, 0.1, 1),
+          0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
+          0.2s transform cubic-bezier(0, 0, 0.1, 1) !important;
+      }
+      &:hover {
+        color: $gray;
+        &::before {
+          -webkit-transform: scaleX(0.2222222222222222) !important;
+          -ms-transform: scaleX(0.2222222222222222) !important;
+          transform: scaleX(0.2222222222222222) !important;
+        }
+      }
+    }
+    &.active {
+      &::before {
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        left: 50%;
+        bottom: 0px;
+        margin-left: -9px;
+        border-radius: 1px;
+        background-color: currentcolor;
+        content: "";
+      }
+    }
+  }
+}
