@@ -6,7 +6,7 @@ import "./Navbar.scss";
 import useNavActive from "@/components/utils/useNavActive";
 
 import Logo from "@/components/navbar/Logo";
-import SearchBar from "@/components/navbar/SearchBar";
+import SearchBar from "@/components/navbar/search";
 import UserMenu from "@/components/navbar/UserMenu";
 
 const Navbar = () => {

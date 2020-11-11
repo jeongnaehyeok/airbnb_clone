@@ -170,3 +170,10 @@ button {
   -ms-user-select: auto;
   user-select: auto;
 }
+
+input {
+  outline: none;
+  overflow: visible;
+  appearance: none;
+  border: 0px;
+}

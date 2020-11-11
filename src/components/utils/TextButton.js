@@ -3,19 +3,22 @@ import classNames from "classnames";
 
 import "./TextButton.scss";
 
-const TextButton = ({ active, text, type, href, onClick }) => {
+const TextButton = ({ navAtcive, active, text, type, href, onClick }) => {
   const TypeButton = () => {
     switch (type) {
       case "a":
         return (
-          <a className={classNames("textbutton__text", active)} href={href}>
+          <a
+            className={classNames("textbutton__text", active, navAtcive)}
+            href={href}
+          >
             {text}
           </a>
         );
       case "button":
         return (
           <button
-            className={classNames("textbutton__text", active)}
+            className={classNames("textbutton__text", active, navAtcive)}
             onClick={onClick}
           >
             {text}

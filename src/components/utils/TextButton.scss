@@ -3,6 +3,7 @@
 .textbutton {
   position: relative;
   padding: 10px 16px;
+  width: auto;
   .textbutton__text {
     color: $white;
     font-size: $font-size-base;
@@ -11,31 +12,31 @@
     cursor: pointer;
     &.deactive {
       &::before {
-        position: absolute !important;
-        width: 18px !important;
-        height: 2px !important;
-        left: 50% !important;
-        bottom: 0px !important;
-        margin-left: -9px !important;
-        border-radius: 1px !important;
-        background-color: currentcolor !important;
-        content: "" !important;
-        -webkit-transform: scaleX(0) !important;
-        -ms-transform: scaleX(0) !important;
-        transform: scaleX(0) !important;
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        left: 50%;
+        bottom: 0px;
+        margin-left: -9px;
+        border-radius: 1px;
+        background-color: currentcolor;
+        content: "";
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
         -webkit-transition: 0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
-          0.2s transform cubic-bezier(0, 0, 0.1, 1) !important;
-        -moz-transition: 0.2s transform cubic-bezier(0, 0, 0.1, 1) !important;
+          0.2s transform cubic-bezier(0, 0, 0.1, 1);
+        -moz-transition: 0.2s transform cubic-bezier(0, 0, 0.1, 1);
         transition: 0.2s -ms-transform cubic-bezier(0, 0, 0.1, 1),
           0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
-          0.2s transform cubic-bezier(0, 0, 0.1, 1) !important;
+          0.2s transform cubic-bezier(0, 0, 0.1, 1);
       }
       &:hover {
         color: $gray;
         &::before {
-          -webkit-transform: scaleX(0.2222222222222222) !important;
-          -ms-transform: scaleX(0.2222222222222222) !important;
-          transform: scaleX(0.2222222222222222) !important;
+          -webkit-transform: scaleX(0.2222222222222222);
+          -ms-transform: scaleX(0.2222222222222222);
+          transform: scaleX(0.2222222222222222);
         }
       }
     }
@@ -50,6 +51,12 @@
         border-radius: 1px;
         background-color: currentcolor;
         content: "";
+      }
+    }
+    &.navactive {
+      color: $black;
+      &:hover {
+        color: $black;
       }
     }
   }
