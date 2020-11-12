@@ -6,6 +6,7 @@ import "./Navbar.scss";
 import useNavActive from "@/components/utils/useNavActive";
 
 import Logo from "@/components/navbar/Logo";
+import SearchBar from "@/components/navbar/search";
 import UserMenu from "@/components/navbar/UserMenu";
 
 const Navbar = () => {
@@ -15,6 +16,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar">
           <Logo navAtcive={navAtcive} />
+          <SearchBar navAtcive={navAtcive} />
           <UserMenu navAtcive={navAtcive} />
         </div>
       </div>

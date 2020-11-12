@@ -158,3 +158,22 @@ h5 {
 svg {
   display: block;
 }
+
+button {
+  border: 0px;
+  background: transparent;
+  outline: none;
+  overflow: visible;
+  appearance: none;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+input {
+  outline: none;
+  overflow: visible;
+  appearance: none;
+  border: 0px;
+}

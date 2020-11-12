@@ -4,23 +4,13 @@
   display: inline-block;
   position: relative;
   padding: 12px;
-  border: 0px;
   border-radius: 22px;
   color: $black;
   font-size: $font-size-4;
   font-weight: $font-weight-bold;
   text-decoration: none;
   line-height: 18px;
-  background: transparent;
-  white-space: nowrap;
   z-index: 1;
-  outline: none;
-  overflow: visible;
-  appearance: none;
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
   cursor: pointer;
   &::before {
     position: absolute;
