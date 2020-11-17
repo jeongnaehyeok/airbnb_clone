@@ -3,8 +3,8 @@ import classNames from "classnames";
 
 import "./ThemeContentsArea.scss";
 
-import BorderButton from "../utils/BorderButton";
-import Thumbnail from "../utils/Thumbnail";
+import BorderButton from "@/components/utils/BorderButton";
+import Thumbnail from "@/components/utils/Thumbnail";
 
 const ThumbnailList = [
   {
@@ -62,6 +62,11 @@ const ThemeContentsArea = () => {
               girditem="girditem"
             />
           ))}
+        </div>
+      </div>
+      <div className="container">
+        <div className="themecontents__bottom">
+          <BorderButton color="black" url="/" text="모두 둘러보기" />
         </div>
       </div>
     </div>

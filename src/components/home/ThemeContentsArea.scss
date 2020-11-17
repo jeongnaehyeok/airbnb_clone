@@ -3,12 +3,12 @@
 .themecontentsarea {
   @include flex-column-center;
   width: 100%;
-  background: #000000;
   padding: 64px 0px 80px;
+  background: #000000;
   .themecontents {
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 30px;
     .themecontents__text {
       color: $white;
@@ -39,17 +39,24 @@
     }
   }
   .gridframe {
-    gap: 16px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
     @include respond-to("medium") {
-      grid-template-columns: 2fr 1fr;
       grid-template-rows: 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
     }
     @include respond-to("small") {
       grid-template-rows: 1fr;
       grid-template-columns: repeat(4, calc(100% - 84px));
+    }
+  }
+  .themecontents__bottom {
+    display: none;
+    padding-top: 32px;
+    @include respond-to("small") {
+      display: block;
     }
   }
   @include respond-to("medium") {

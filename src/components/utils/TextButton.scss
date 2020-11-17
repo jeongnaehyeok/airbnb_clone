@@ -1,0 +1,63 @@
+@import "../../scss/variables";
+
+.textbutton {
+  position: relative;
+  padding: 10px 16px;
+  width: auto;
+  .textbutton__text {
+    color: $white;
+    font-size: $font-size-base;
+    line-height: 20px;
+    font-weight: $font-weight-normal;
+    cursor: pointer;
+    &.deactive {
+      &::before {
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        left: 50%;
+        bottom: 0px;
+        margin-left: -9px;
+        border-radius: 1px;
+        background-color: currentcolor;
+        content: "";
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: 0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
+          0.2s transform cubic-bezier(0, 0, 0.1, 1);
+        -moz-transition: 0.2s transform cubic-bezier(0, 0, 0.1, 1);
+        transition: 0.2s -ms-transform cubic-bezier(0, 0, 0.1, 1),
+          0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
+          0.2s transform cubic-bezier(0, 0, 0.1, 1);
+      }
+      &:hover {
+        color: $gray;
+        &::before {
+          -webkit-transform: scaleX(0.2222222222222222);
+          -ms-transform: scaleX(0.2222222222222222);
+          transform: scaleX(0.2222222222222222);
+        }
+      }
+    }
+    &.active {
+      &::before {
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        left: 50%;
+        bottom: 0px;
+        margin-left: -9px;
+        border-radius: 1px;
+        background-color: currentcolor;
+        content: "";
+      }
+    }
+    &.navactive {
+      color: $black;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
