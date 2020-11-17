@@ -8,6 +8,7 @@ import Fixedbar from "@/components/Fixedbar";
 
 import Navbar from "@/page/Navbar";
 import Home from "@/page/Home";
+import Result from "@/page/Result";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/test" exact component={Navbar} />
+        <Route path="/result" exact component={Result} />
         <Redirect path="*" to="/" />
       </Switch>
     </BrowserRouter>

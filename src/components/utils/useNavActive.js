@@ -6,6 +6,10 @@ const useNavActive = () => {
     setState({ navAtcive: window.scrollY > 58 ? "active" : "deactive" });
   };
   useEffect(() => {
+    if (window.location.pathname !== "/") {
+      setState({ navAtcive: "active" });
+      return;
+    }
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
